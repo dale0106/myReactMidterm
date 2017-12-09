@@ -1,0 +1,63 @@
+$col-1-width: 30%;
+$col-2-width: 100% - $col-1-width;
+
+body {
+
+  height: 100%;
+  font-family: sans-serif;
+
+  // Header - Active
+  .title {
+    width: 100%;
+    font-size: 3em;
+    font-weight: bold;
+    border: solid black 1px;
+  }
+
+  // UL - Active
+  .column {
+    float:left;
+    padding: 10px;
+
+    // LI - Active
+    &.list {
+      width: $col-1-width;
+      height: 100%;
+      overflow: scroll;
+    }
+
+    }
+
+  .contactInfo{
+
+    position: relative;
+    float: right;
+    padding: 2vh;
+    margin: 2vh;
+  }
+
+
+  ul {
+    list-style-type: none;
+    float: left;
+    position: absolute;
+
+
+    li{
+      border: 2px solid black;
+      margin: 2vh;
+      padding: 2vh;
+
+    }
+
+
+  }
+
+}
+
+
+
+
+
+
+
